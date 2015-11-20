@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="description" content="Backbone-ES6 LocalStorage Todos -- A canonical TODOs demo for `backbone-es6` + `backbone.localStorage` + JSPM / SystemJS.">
+   <meta name="viewport" content="width=device-width, initial-scale=0.75">
+   <title>Backbone-ES6 LocalStorage Todos</title>
+
+   <!-- Defines a CSP which makes the app more secure; to even be more secure adding a hash or nonce for
+   `script-src` is recommended -->
+   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com">
+
+   <!-- Icons for web apps created by http://realfavicongenerator.net/ -->
+
+   <!-- Add to homescreen for Chrome on Android -->
+   <meta name="mobile-web-app-capable" content="yes">
+   <link rel="icon" type="image/png" href="site/images/icons/android-chrome-192x192.png" sizes="192x192" data-cdn="true">
+   <link rel="manifest" href="site/images/icons/manifest.json">
+
+   <!-- Add to homescreen for Safari on iOS -->
+   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="apple-mobile-web-app-status-bar-style" content="black">
+   <meta name="apple-mobile-web-app-title" content="Todos">
+   <link rel="apple-touch-icon" sizes="57x57" href="site/images/icons/apple-touch-icon-57x57.png">
+   <link rel="apple-touch-icon" sizes="60x60" href="site/images/icons/apple-touch-icon-60x60.png">
+   <link rel="apple-touch-icon" sizes="72x72" href="site/images/icons/apple-touch-icon-72x72.png">
+   <link rel="apple-touch-icon" sizes="76x76" href="site/images/icons/apple-touch-icon-76x76.png">
+   <link rel="apple-touch-icon" sizes="114x114" href="site/images/icons/apple-touch-icon-114x114.png">
+   <link rel="apple-touch-icon" sizes="120x120" href="site/images/icons/apple-touch-icon-120x120.png">
+   <link rel="apple-touch-icon" sizes="144x144" href="site/images/icons/apple-touch-icon-144x144.png">
+   <link rel="apple-touch-icon" sizes="152x152" href="site/images/icons/apple-touch-icon-152x152.png">
+   <link rel="apple-touch-icon" sizes="180x180" href="site/images/icons/apple-touch-icon-180x180.png">
+   <link rel="mask-icon" href="site/images/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+   <!-- Tile icon for Win 8/10 (144x144 + tile color) -->
+   <meta name="msapplication-TileColor" content="#2d89ef">
+   <meta name="msapplication-TileImage" content="site/images/icons/mstile-144x144.png">
+   <meta name="msapplication-config" content="site/images/icons/browserconfig.xml">
+   <meta name="theme-color" content="#ffffff">
+
+   <!-- Favicon icon -->
+   <link rel="shortcut icon" href="site/images/icons/favicon.ico" type="image/x-icon">
+   <link rel="icon" type="image/png" href="site/images/icons/favicon-16x16.png" sizes="16x16">
+   <link rel="icon" type="image/png" href="site/images/icons/favicon-32x32.png" sizes="32x32">
+   <link rel="icon" type="image/png" href="site/images/icons/favicon-194x194.png" sizes="194x194">
+   <link rel="icon" type="image/png" href="site/images/icons/favicon-96x96.png" sizes="96x96">
+
+   <!-- App stylesheet -->
+   <link href="site/css/todos.css" media="all" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+
+<noscript>We apologize, but `backbone-es6-localstorage-todos` requires javascript.</noscript>
+
+<!-- Todo App Interface -->
+
+<div id="todoapp">
+   <div class="title">
+      <h1>Backbone-ES6 LocalStorage Todos</h1>
+   </div>
+
+   <div class="content">
+   </div>
+</div>
+
+<div id="credits">
+   Powered by <a href="https://github.com/typhonjs/backbone-es6" target="_blank">backbone-es6</a> using <a href="http://jspm.io" target="_blank">JSPM</a> / <a href="https://github.com/systemjs/systemjs" target="_blank">SystemJS</a> and <a href="https://github.com/typhonjs/Backbone.localStorage" target="_blank">Backbone.localStorage</a>.<br /><br />
+   Learn how we built it in the <a href="http://js.demos.typhonrt.org/backbone-es6-localstorage-todos/docs/manual/index.html" target="_blank">manual</a>.
+   <p>
+   Please note that a fork of `Backbone.localStorage` is currently being used to fix import of backbone-es6 in the UMD module wrapper. See this Backbone.localStorage PR.
+</div>
+
+<!--REMOVE-DEPLOY-->
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script src="config/config-app-paths.js"></script>
+<!--REMOVE-DEPLOY-->
+<script>System.import('main.js');</script>
+</body>
+</html>

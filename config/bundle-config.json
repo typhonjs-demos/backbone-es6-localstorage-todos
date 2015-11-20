@@ -1,0 +1,24 @@
+{
+   "entryPoints":
+   [
+      {
+         "destBaseDir": "./dist",
+         "destFilename": "backbone-es6-localstorage-todos.js",
+         "formats": ["amd"],
+         "mangle": false,
+         "minify": false,
+         "src": "main.js",
+         "extraConfig": "./config/config-app-paths.js"
+      },
+
+      {
+         "destBaseDir": "./dist",
+         "destFilename": "backbone-es6-localstorage-todos.min.js",
+         "formats": ["amd"],
+         "mangle": true,
+         "minify": true,
+         "src": "main.js",
+         "extraConfig": "./config/config-app-paths.js"
+      }
+   ]
+}

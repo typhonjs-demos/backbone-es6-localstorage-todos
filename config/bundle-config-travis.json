@@ -1,0 +1,13 @@
+{
+   "entryPoints":
+   [
+      {
+         "inMemoryBuild": true,
+         "formats": ["amd"],
+         "mangle": false,
+         "minify": false,
+         "src": "main.js",
+         "extraConfig": "./config/config-app-paths.js"
+      }
+   ]
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <base data-ice="baseUrl" href="../../../../../">
+  <title data-ice="title">backbone-es6-localstorage-todos/site/js/views/ManageTodosView.js | backbone-es6-localstorage-todos API Document</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css">
+  <link type="text/css" rel="stylesheet" href="css/prettify-tomorrow.css">
+  <script src="script/prettify/prettify.js"></script>
+  
+  
+  <script src="script/manual.js"></script>
+</head>
+<body class="layout-container" data-ice="rootContainer">
+
+<header>
+  <a href="./">Home</a>
+  <a href="./manual/index.html" data-ice="manualHeaderLink">Manual</a>
+  <a href="identifiers.html">Reference</a>
+  <a href="source.html">Source</a>
+  
+  <a data-ice="repoURL" href="https://github.com/typhonjs-demos/typhonjs-backbone-localstorage-todos/typhonjs-backbone-localstorage-todos.git" class="repo-url-github">Repository</a>
+  <div class="search-box">
+  <span>
+    <img src="./image/search.png">
+    <span class="search-input-edge"></span><input class="search-input"><span class="search-input-edge"></span>
+  </span>
+    <ul class="search-result"></ul>
+  </div>
+</header>
+
+<nav class="navigation" data-ice="nav"><div>
+  <ul>
+    
+  <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">(backbone-es6):<br>backbone/src</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/backbone-es6@master/src/Backbone.js~Backbone.html">Backbone</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/backbone-es6@master/src/Collection.js~Collection.html">Collection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/backbone-es6@master/src/Debug.js~Debug.html">Debug</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/backbone-es6@master/src/Events.js~Events.html">Events</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/backbone-es6@master/src/History.js~History.html">History</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/backbone-es6@master/src/Model.js~Model.html">Model</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/backbone-es6@master/src/Router.js~Router.html">Router</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/backbone-es6@master/src/Utils.js~Utils.html">Utils</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/backbone-es6@master/src/View.js~View.html">View</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-extend">extend</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-function">F</span><span data-ice="name"><span><a href="function/index.html#static-function-sync">sync</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-BackboneProxy">BackboneProxy</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-collection">collection</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-model">model</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">site/js</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/site/js/App.js~App.html">App</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">site/js/collections</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/site/js/collections/todoList.js~TodoList.html">TodoList</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-todoList">todoList</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">site/js/models</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/site/js/models/Item.js~Item.html">Item</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/site/js/models/appState.js~AppState.html">AppState</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-appState">appState</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">site/js/router</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/site/js/router/AppRouter.js~AppRouter.html">AppRouter</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">site/js/views</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/site/js/views/ItemView.js~ItemView.html">ItemView</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/site/js/views/ManageTodosView.js~ManageTodosView.html">ManageTodosView</a></span></span></li>
+</ul>
+</div>
+</nav>
+
+<div class="content" data-ice="content"><h1 data-ice="title">backbone-es6-localstorage-todos/site/js/views/ManageTodosView.js</h1>
+<pre class="source-code line-number raw-source-code"><code class="prettyprint linenums" data-ice="content">&apos;use strict&apos;;
+
+import $                from &apos;jquery&apos;;
+import _                from &apos;underscore&apos;;
+import Backbone         from &apos;backbone&apos;;
+import eventbus         from &apos;mainEventbus&apos;;
+
+import ItemView         from &apos;pathSite/js/views/ItemView.js&apos;;
+
+import appState         from &apos;pathSite/js/models/appState.js&apos;;
+import todoList         from &apos;pathSite/js/collections/todoList.js&apos;;
+
+import manageTodosTmpl  from &apos;pathSite/templates/manage-todos.html!text&apos;;
+import statsTmpl        from &apos;pathSite/templates/stats.html!text&apos;;
+
+/**
+ * The main view that lets a user manage their todos `Items`. When the various items are rendered they are tracked
+ * in the `itemViews` map so that they can be cleaned up correctly.
+ *
+ * It should be noted that since this app is based on `typhonjs-backbone-parse` there are additional lifecycle methods
+ * added to Backbone.View such as `close` which automatically removes all listeners defined by `listenTo`.
+ */
+export default class ManageTodosView extends Backbone.View
+{
+   /**
+    * Delegated events for creating new items and clearing completed ones.
+    *
+    * @returns {object}
+    */
+   get events()
+   {
+      return {
+         &apos;keypress #new-todo&apos;: &apos;createOnEnter&apos;,
+         &apos;click #clear-completed&apos;: &apos;clearCompleted&apos;,
+         &apos;click #toggle-all&apos;: &apos;toggleAllComplete&apos;,
+         &apos;click ul#filters a&apos;: (e) =&gt; { eventbus.trigger(&apos;app:select:filter&apos;, $(e.target).attr(&apos;id&apos;)); }
+      };
+   }
+
+   /**
+    * The template for the line of statistics at the bottom of the app.
+    */
+   get statsTemplate() { return _.template(statsTmpl); }
+
+   /**
+    * Extends the optional parameters with the element this view is associated with to `.content`.
+    *
+    * @param {object}   options - optional parameters
+    */
+   constructor(options = {})
+   {
+      super(_.extend({ el: &apos;.content&apos; }, options));
+
+      /**
+       * Stores all current `ItemViews` so that they may be properly cleaned up.
+       *
+       * @type {Array&lt;ItemView&gt;}
+       */
+      this.itemViews = new Map();
+   }
+
+   /**
+    * At initialization we bind to the relevant events on the `Todos` collection, when items are added or changed.
+    * Kick things off by loading any preexisting todos that might be saved to Parse.
+    *
+    * @param {object}   options - optional parameters
+    */
+   initialize(options)
+   {
+      // Binds the `this` context to all methods such that it is accessible via Backbone event callbacks.
+      _.bindAll(this, &apos;addOne&apos;, &apos;addAll&apos;, &apos;addSome&apos;, &apos;createOnEnter&apos;, &apos;render&apos;, &apos;toggleAllComplete&apos;);
+
+      // Main todos management template.
+      this.$el.html(_.template(manageTodosTmpl)(options));
+
+      /**
+       * @type {object} Stores the input field.
+       */
+      this.input = this.$(&apos;#new-todo&apos;);
+
+      /**
+       * @type {object} Stores the toggle all checkbox.
+       */
+      this.allCheckbox = this.$(&apos;#toggle-all&apos;)[0];
+
+      // Useful to get rid of the initial displayed spinner gif. This is called only once when the collection
+      // initially is reset.
+      this.listenToOnce(todoList, &apos;reset&apos;, () =&gt; { this.$(&apos;#todo-list&apos;).html(&apos;&apos;); });
+
+      // When `AppState` changes invoke `filter` to redraw this view.
+      this.listenTo(appState, &apos;change&apos;, this.filter);
+
+      // When `todoList` is reset / initially populated or if an Item done state changes invoke `filter` to
+      // redraw this view.
+      this.listenTo(todoList, &apos;change:done reset&apos;, this.filter);
+
+      // Ensure that the statistics are re-rendered when an item is added or removed.
+      this.listenTo(todoList, &apos;update&apos;, this.render);
+   }
+
+   /**
+    * Add all items in the Todos collection at once.
+    */
+   addAll()
+   {
+      this.clearAll();
+
+      todoList.each(this.addOne);
+
+      this.render();
+   }
+
+   /**
+    * Add a single item to the list by creating a view for it, and appending its element to the `&lt;ul&gt;`.
+    *
+    * @param {Item}  item - Item to add.
+    */
+   addOne(item)
+   {
+      const view = new ItemView({ model: item });
+
+      this.itemViews.set(item, view);
+
+      this.$(&apos;#todo-list&apos;).append(view.render().el);
+   }
+
+   /**
+    * Only adds some todos, based on a filtering function that is passed into `addSome`.
+    *
+    * @param {function} filter - A function to filter the Items.
+    */
+   addSome(filter)
+   {
+      this.clearAll();
+
+      todoList.chain().filter(filter).each(this.addOne);
+
+      this.render();
+   }
+
+   /**
+    * Iterates through the `itemViews` map invoking the `Backbone.View-&gt;remove` method for each `ItemView` tracked.
+    * The map is then cleared.
+    */
+   clearAll()
+   {
+      this.itemViews.forEach((itemView) =&gt; { itemView.remove(); });
+      this.itemViews.clear();
+   }
+
+   /**
+    * Clear all done todos items, destroying their models.
+    */
+   clearCompleted()
+   {
+      _.each(todoList.done(), (item) =&gt;
+      {
+         // This will trigger the remove method of ItemView.
+         item.destroy();
+
+         // Remove the ItemView from the tracking map.
+         this.itemViews.delete(item);
+      });
+   }
+
+   /**
+    * If you hit return in the main input field, create new Item model. The creation of the item is handled over
+    * the eventbus via triggering `app:create:item` which invokes `App.js-&gt;createItem`.
+    *
+    * @param {object}   e - event data
+    */
+   createOnEnter(e)
+   {
+      // Only respond to `enter` pressed.
+      if (e.keyCode !== 13) { return; }
+
+      // Create new item.
+      eventbus.trigger(&apos;app:create:item&apos;, this.input.val());
+
+      // Clear the input text field.
+      this.input.val(&apos;&apos;);
+
+      // Sets state and updates Backbone.history.navigate.
+      eventbus.trigger(&apos;app:select:filter&apos;, &apos;all&apos;);
+   }
+
+   /**
+    * Invoked when the TodoList collection is reset and when the app state changes.
+    */
+   filter()
+   {
+      const filterValue = appState.get(&apos;filter&apos;);
+
+      switch(filterValue)
+      {
+         case &apos;all&apos;:
+            this.addAll();
+            break;
+
+         case &apos;completed&apos;:
+            this.addSome((item) =&gt; { return item.get(&apos;done&apos;); });
+            break;
+
+         default:
+            this.addSome((item) =&gt; { return !item.get(&apos;done&apos;); });
+            break;
+      }
+   }
+
+   /**
+    * Re-rendering the App just means refreshing the statistics -- the rest of the app doesn&apos;t change.
+    */
+   render()
+   {
+      const done = todoList.done().length;
+      const remaining = todoList.remaining().length;
+
+      // Render the statistics template
+      this.$(&apos;#todo-stats&apos;).html(this.statsTemplate({ total: todoList.length, done, remaining }));
+
+      // Automatically wires all events specified by `get events()`.
+      this.delegateEvents();
+
+      // Sets the checked state of the allCheckbox depending on remaining count.
+      this.allCheckbox.checked = !remaining;
+
+      // Update the filter state after the stats template is rendered.
+      const filterValue = appState.get(&apos;filter&apos;);
+      $(&apos;ul#filters a&apos;).removeClass(&apos;selected&apos;);
+      $(`ul#filters a#${filterValue}`).addClass(&apos;selected&apos;);
+   }
+
+   /**
+    * Toggles all todos items to completed / done then saves each item.
+    */
+   toggleAllComplete()
+   {
+      const done = this.allCheckbox.checked;
+      todoList.each((item) =&gt; { item.save({ done }); });
+   }
+}</code></pre>
+
+</div>
+
+<footer class="footer">
+  Generated by <a href="https://esdoc.org">ESDoc<span data-ice="esdocVersion">(0.4.3)</span></a>
+</footer>
+
+<script src="script/search_index.js"></script>
+<script src="script/search.js"></script>
+<script src="script/pretty-print.js"></script>
+<script src="script/inherited-summary.js"></script>
+<script src="script/test-summary.js"></script>
+<script src="script/inner-link.js"></script>
+<script src="script/patch-for-local.js"></script>
+</body>
+</html>

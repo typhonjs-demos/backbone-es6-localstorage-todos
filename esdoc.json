@@ -1,0 +1,36 @@
+{
+   "title": "backbone-es6-localstorage-todos",
+   "source": "site",
+   "destination": "docs",
+   "excludes": ["^(?:(?!\\.js$).)*$"],
+   "plugins":
+   [
+      {
+         "name": "esdoc-plugin-jspm"
+      },
+
+      {
+         "name": "esdoc-plugin-extends-replace",
+         "option":
+         {
+            "replace":
+            {
+               "backbone~[B|b]ackbone\\.Collection": "backbone-es6@[\\s\\S]+\/src\/Collection",
+               "backbone~[B|b]ackbone\\.Events": "backbone-es6@[\\s\\S]+\/src\/Events",
+               "backbone~[B|b]ackbone\\.History": "backbone-es6@[\\s\\S]+\/src\/History",
+               "backbone~[B|b]ackbone\\.Model": "backbone-es6@[\\s\\S]+\/src\/Model",
+               "backbone~[B|b]ackbone\\.Router": "backbone-es6@[\\s\\S]+\/src\/Router",
+               "backbone~[B|b]ackbone\\.View": "backbone-es6@[\\s\\S]+\/src\/View"
+            }
+         }
+      }
+   ],
+   "manual":
+   {
+      "overview": ["./manual/overview.md"],
+      "installation": ["./manual/installation.md"],
+      "tutorial": ["./manual/tutorial.md"],
+      "faq": ["./manual/faq.md"],
+      "changelog": ["./CHANGELOG.md"]
+   }
+}
