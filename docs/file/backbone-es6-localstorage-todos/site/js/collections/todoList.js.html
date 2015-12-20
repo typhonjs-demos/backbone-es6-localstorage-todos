@@ -68,9 +68,10 @@ import LocalStorage  from &apos;backbone-localstorage&apos;;
 import Item          from &apos;pathSite/js/models/Item.js&apos;;
 
 /**
- *
+ * Provides the Backbone.localStorage instance and stores data under `backbone:es6:localstorage:TodoList` in the
+ * browser local storage.
  */
-const s_LOCAL_STORAGE = new LocalStorage(&quot;TodoList&quot;);
+const s_LOCAL_STORAGE = new LocalStorage(&apos;backbone:es6:localstorage:TodoList&apos;);
 
 /**
  * This module defines a `Backbone.Collection` which stores todos `Items` and provides utility methods to filter, sort,
