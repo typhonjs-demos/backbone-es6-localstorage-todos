@@ -17,8 +17,8 @@
       "underscore": "npm:underscore@^1.8.3"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.8.33",
-      "babel-runtime": "npm:babel-runtime@^5.8.29",
+      "babel": "npm:babel-core@^5.8.34",
+      "babel-runtime": "npm:babel-runtime@^5.8.34",
       "core-js": "npm:core-js@^1.2.6"
     }
   },
@@ -26,6 +26,7 @@
     "gulp": "^3.9.0",
     "jspm": "^0.16.19",
     "typhonjs-config-eslint": "^0.2.1",
+    "typhonjs-config-jspm-parse": "^0.1.0",
     "typhonjs-core-gulptasks": "^0.3.0"
   }
 }

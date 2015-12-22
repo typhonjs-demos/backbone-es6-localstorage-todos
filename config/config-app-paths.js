@@ -6,11 +6,17 @@
 
 var System = System || global.System;
 
+var JSPMParser = JSPMParser || (typeof require !== 'undefined' ? require('typhonjs-config-jspm-parse') : undefined);
+
+// Gets the PackageResolver and finds the `typhonjs-core-backbone-event` child dependency of mapped package `backbone`.
+var packageResolver = JSPMParser.getPackageResolver(System);
+var pathBackboneEvents = packageResolver.getDirectDependency('backbone', 'typhonjs-core-backbone-events');
+
 System.config(
 {
    map:
    {
-      'mainEventbus': 'site/js/events/mainEventbus.js',
+      'mainEventbus': pathBackboneEvents + '/src/mainEventbus.js',       // This is the normal eventbus.
       'pathConfig': 'config',
       'pathSite': 'site'
    }
