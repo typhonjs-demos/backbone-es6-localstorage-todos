@@ -16,7 +16,7 @@
             "replace":
             {
                "backbone~[B|b]ackbone\\.Collection": "backbone-es6@[\\s\\S]+\/src\/Collection",
-               "backbone~[B|b]ackbone\\.Events": "backbone-es6@[\\s\\S]+\/src\/Events",
+               "backbone~[B|b]ackbone\\.Events": "typhonjs-core-backbone-events@[\\s\\S]+\/src\/Events",
                "backbone~[B|b]ackbone\\.History": "backbone-es6@[\\s\\S]+\/src\/History",
                "backbone~[B|b]ackbone\\.Model": "backbone-es6@[\\s\\S]+\/src\/Model",
                "backbone~[B|b]ackbone\\.Router": "backbone-es6@[\\s\\S]+\/src\/Router",
