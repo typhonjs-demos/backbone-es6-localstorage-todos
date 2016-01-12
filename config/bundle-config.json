@@ -4,7 +4,7 @@
       {
          "destBaseDir": "./dist",
          "destFilename": "backbone-es6-localstorage-todos.js",
-         "formats": ["amd"],
+         "formats": ["umd"],
          "mangle": false,
          "minify": false,
          "src": "main.js",
@@ -14,7 +14,7 @@
       {
          "destBaseDir": "./dist",
          "destFilename": "backbone-es6-localstorage-todos.min.js",
-         "formats": ["amd"],
+         "formats": ["umd"],
          "mangle": true,
          "minify": true,
          "src": "main.js",

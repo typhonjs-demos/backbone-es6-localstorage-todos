@@ -3,7 +3,7 @@
    [
       {
          "inMemoryBuild": true,
-         "formats": ["amd"],
+         "formats": ["umd"],
          "mangle": false,
          "minify": false,
          "src": "main.js",
