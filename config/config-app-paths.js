@@ -16,7 +16,8 @@ System.config(
 {
    map:
    {
-      'mainEventbus': pathBackboneEvents + '/src/mainEventbus.js',       // This is the normal eventbus.
+//      'mainEventbus': pathBackboneEvents + '/src/mainEventbus.js',       // This is the normal eventbus.
+      'mainEventbus': System.map['typhonjs-core-backbone-events-logged'] + '/src/mainEventbus.js',       // This is the normal eventbus.
       'pathConfig': 'config',
       'pathSite': 'site'
    }

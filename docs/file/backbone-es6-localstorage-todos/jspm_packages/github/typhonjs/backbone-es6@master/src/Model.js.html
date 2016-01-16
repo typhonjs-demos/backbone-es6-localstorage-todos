@@ -45,8 +45,14 @@
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-BackboneProxy">BackboneProxy</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-collection">collection</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-model">model</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">typhonjs-core-backbone-events-logged/src</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/typhonjs-core-backbone-events-logged@master/src/TyphonLoggedEvents.js~TyphonLoggedEvents.html">TyphonLoggedEvents</a></span></span></li>
 <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">typhonjs-core-backbone-events/src</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/typhonjs-core-backbone-events@master/src/Events.js~Events.html">Events</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/typhonjs-core-backbone-events@master/src/TyphonEvents.js~TyphonEvents.html">TyphonEvents</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">typhonjs-core-logging/src</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/typhonjs-core-logging@master/src/ConsoleLogger.js~ConsoleLogger.html">ConsoleLogger</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/typhonjs-core-logging@master/src/Logger.js~Logger.html">Logger</a></span></span></li>
+<li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">typhonjs-core-utils/src</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/typhonjs-core-utils@master/src/MultiMap.js~MultiMap.html">MultiMap</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/jspm_packages/github/typhonjs/typhonjs-core-utils@master/src/Utils.js~Utils.html">Utils</a></span></span></li>
+<li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-btoa">btoa</a></span></span></li>
 <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">site/js</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/site/js/App.js~App.html">App</a></span></span></li>
 <li data-ice="doc"><div data-ice="dirPath" class="nav-dir-path">site/js/collections</div><span data-ice="kind" class="kind-class">C</span><span data-ice="name"><span><a href="class/backbone-es6-localstorage-todos/site/js/collections/todoList.js~TodoList.html">TodoList</a></span></span></li>
 <li data-ice="doc"><span data-ice="kind" class="kind-variable">V</span><span data-ice="name"><span><a href="variable/index.html#static-variable-todoList">todoList</a></span></span></li>
@@ -256,6 +262,14 @@ class Model extends Events
       let attrs = attributes;
 
       /**
+       * The prefix is used to create the client id which is used to identify models locally.
+       * You may want to override this if you&apos;re experiencing name clashes with model ids.
+       *
+       * @type {string}
+       */
+      this.cidPrefix = &apos;c&apos;;
+
+      /**
        * Client side ID
        * @type {number}
        */
@@ -287,14 +301,6 @@ class Model extends Events
        * @type {*}
        */
       this.validationError = null;
-
-      /**
-       * The prefix is used to create the client id which is used to identify models locally.
-       * You may want to override this if you&apos;re experiencing name clashes with model ids.
-       *
-       * @type {string}
-       */
-      this.cidPrefix = &apos;c&apos;;
 
       // Allows child classes to postpone initialization.
       if (_.isBoolean(options.abortCtorInit) &amp;&amp; options.abortCtorInit) { return; }
