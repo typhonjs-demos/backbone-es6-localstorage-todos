@@ -11,16 +11,10 @@ import todoList         from 'pathSite/js/collections/todoList.js';
 
 /**
  * Provides the main entry point for the Todos app and major control functionality (the C in MVC). This control
- * functionality is exposed over an eventbus created by `mainEventbus.js`. `typhonjs-backbone-parse` provides
- * additional functionality particularly for `Backbone.Events` adding the ability to invoke asynchronous actions
- * over the eventbus using the `triggerThen` method which resolves any Promises returned by event targets.
+ * functionality is exposed over an eventbus created by `mainEventbus.js`.
  *
  * While in this simple app there is only one view of the `TodoList` a benefit of separating control functionality and
  * the `TodoList` instance from a specific view is that it could be used across multiple views.
- *
- * Please note that all Parse specific API access is isolated in this class. By isolating Parse API access to
- * just this class if the app was rewritten to use a different backend then only this class needs to be modified
- * to support the new backend API after selecting an alternate Backbone implementation.
  */
 export default class App
 {
@@ -49,8 +43,7 @@ export default class App
    }
 
    /**
-    * Creates a new Item in the todos list. Note the addition of user which becomes a Parse pointer and an
-    * Parse.ACL (access control list) which limits the item to be only accessible to the current user.
+    * Creates a new Item in the todos list.
     *
     * @param {string}   content - The text for the item.
     */
