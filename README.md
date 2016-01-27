@@ -16,3 +16,7 @@ More info coming soon.
 Live demo here: http://js.demos.typhonrt.org/backbone-es6-localstorage-todos/
 
 Docs (class overview) here: http://js.demos.typhonrt.org/backbone-es6-localstorage-todos/docs/
+
+------
+
+Please review [electron-backbone-es6-localstorage-todos](https://github.com/typhonjs-demos/electron-backbone-es6-localstorage-todos) for how to create a desktop version from the bundled version of this web app using [Electron](http://electron.atom.io/). Minimal code and configuration is necessary when using [typhonjs-core-gulptasks](https://github.com/typhonjs/typhonjs-core-gulptasks) to work with Electron.
