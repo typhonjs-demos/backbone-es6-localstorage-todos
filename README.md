@@ -1,11 +1,11 @@
 # backbone-es6-localstorage-todos
-Provides the canonical TODOs demo for backbone-es6 using Backbone.localStorage with JSPM / SystemJS.
+Provides the canonical TODOs demo for [backbone-es6](https://github.com/typhonjs/backbone-es6) using [typhonjs-core-backbone-localstorage](https://github.com/typhonjs/typhonjs-core-backbone-localstorage) with [JSPM](http://jspm.io/) / [SystemJS](https://github.com/systemjs/systemjs).
 
 More documentation and tutorial coming soon. The basic installation steps:
 
-- Install Node
-- Install Gulp globally "npm install gulp -g"
-- Install JSPM / SystemJS globally "npm install jspm -g"
+- Install Node (only once as necessary)
+- Install Gulp globally "npm install gulp -g" (only once as necessary)
+- Install JSPM / SystemJS globally "npm install jspm -g" (only once as necessary)
 - Check out the source repo.
 - run "npm install" from the local copy directory.
 - run "jspm install" from the local copy directory.
