@@ -16,9 +16,6 @@ import statsTmpl        from 'pathSite/templates/stats.html!text';
 /**
  * The main view that lets a user manage their todos `Items`. When the various items are rendered they are tracked
  * in the `itemViews` map so that they can be cleaned up correctly.
- *
- * It should be noted that since this app is based on `typhonjs-backbone-parse` there are additional lifecycle methods
- * added to Backbone.View such as `close` which automatically removes all listeners defined by `listenTo`.
  */
 export default class ManageTodosView extends Backbone.View
 {
