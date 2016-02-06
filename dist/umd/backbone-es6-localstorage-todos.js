@@ -564,10 +564,7 @@ $__System.register('8', ['3', '5', '9', 'a', 'b'], function (_export) {
           * Provides a basic `Backbone.Router` to route between app states: `all`, `active` & `completed`. When a user
           * navigates between these different filter type states `Backbone.history.navigate` is invoked in `App.js->selectFilter`
           * to update the navigation history allowing the user to use the back and forward browser controls to navigate the app.
-          * When a filter type is selected it is referenced in the current URL for the web app. If this URL is navigated to and
-          * the user is still logged into the app `AppRouter` will set the `AppState` accordingly and `ManageTodosView` will
-          * appropriately show the `Items` for the current user given the filter state set below. If a user is not logged in
-          * `App.js` renders the login view and `AppRouter` will replace any route matches with no hash tag.
+          * When a filter type is selected it is referenced in the current URL for the web app. 
           *
           * Please note that in `App.js->s_INITIALIZE_ROUTES` a default catch all no route callback is specified which handles
           * unmatched routes.
@@ -3442,9 +3439,6 @@ $__System.register('59', ['3', '4', '5', '9', '32', '54', '56', '57', '58', 'a',
          /**
           * The main view that lets a user manage their todos `Items`. When the various items are rendered they are tracked
           * in the `itemViews` map so that they can be cleaned up correctly.
-          *
-          * It should be noted that since this app is based on `typhonjs-backbone-parse` there are additional lifecycle methods
-          * added to Backbone.View such as `close` which automatically removes all listeners defined by `listenTo`.
           */
          'use strict';
 
@@ -12991,9 +12985,8 @@ $__System.register('80', ['3', '4', '5', 'a', 'b'], function (_export) {
     execute: function () {
 
       /**
-       * Our basic todos Item model has `content`, `order`, and `done` attributes. When creating a new Item instance in
-       * `App.js->createItem` the current Parse user is also associated with the item instance along with a
-       * Parse.ACL (access control list) instance which ensures that the item is only accessible by that given user.
+       * Our basic todos Item model has `content`, `order`, and `done` attributes. New Item instances are created in
+       * `App.js->createItem`.
        */
       'use strict';
 
@@ -13027,24 +13020,13 @@ $__System.register('80', ['3', '4', '5', 'a', 'b'], function (_export) {
             this.save({ done: !this.get('done') });
           }
         }, {
-          key: 'className',
-
-          /**
-           * Returns the `className` which is the table stored in Parse.
-           *
-           * @returns {string}
-           */
-          get: function get() {
-            return 'Item';
-          }
+          key: 'defaults',
 
           /**
            * Default attributes for the item.
            *
            * @returns {object}
            */
-        }, {
-          key: 'defaults',
           get: function get() {
             return { content: 'empty todo...', done: false };
           }
@@ -13092,9 +13074,6 @@ $__System.register('5b', ['3', '4', '5', '65', '80', 'a', 'b'], function (_expor
        * and retrieve the next order number used to sort `Items`. Instead of exporting the class itself an instance of the
        * the class is exported. This allows the instance to be imported anywhere access to the collection is necessary.
        * Multiple views may access this instance, but in this demo only `ManageTodosView` displays data from the collection.
-       *
-       * Please note that the Parse.Query is generated in `App.js` during user login using the current user ID to retrieve
-       * `Items` associated with the current user.
        */
 
       TodoList = (function (_Backbone$Collection) {
@@ -13228,8 +13207,7 @@ $__System.register('81', ['3', '4', '5', '8', '9', '54', '59', '5b'], function (
          App = (function () {
             /**
              * Wires up the main eventbus, invokes the private s_INITIALIZE_ROUTE function which creates `AppRouter` and sets up
-             * a catch all handler then invokes `Backbone.history.start` with the root path and finally the constructor shows the
-             * proper view based on whether there is a current logged in user.
+             * a catch all handler then invokes `Backbone.history.start` with the root path and finally the constructor creates the main view..
              */
 
             function App() {
@@ -13245,7 +13223,7 @@ $__System.register('81', ['3', '4', '5', '8', '9', '54', '59', '5b'], function (
                s_INITIALIZE_ROUTE();
 
                /**
-                * Creates the initial displayed view based given if a user is currently logged into the app.
+                * Creates the only displayed view of the app.
                 *
                 * @type {View} Stores the current active view.
                 */
@@ -13363,9 +13341,9 @@ $__System.register('81', ['3', '4', '5', '8', '9', '54', '59', '5b'], function (
 
 $__System.register('1', ['7', '81'], function (_export) {
   /**
-   * Provides the main entry point to the web app first invoking `parseinit` which is a component mapped via
-   * `package.json->jspm->dependencies` to `typhonjs-core-parse-init`. `parseinit` will initialize the Parse API by
-   * loading `production-config.js` which is mapped to `parseconfig` in `config-app-paths.js`. Please see `indexSrc.html`
+   * Provides the main entry point to the web app first invoking `typhonjs-core-backbone-localstorage` which is a
+   * component mapped via `package.json->jspm->dependencies`. `typhonjs-core-backbone-localstorage` bootstraps Backbone
+   * replacing the sync adapter with a browser `localStorage` version. Please see `indexSrc.html`
    * and notice that `config-app-paths.js` is loaded after `config.js` is loaded.
    */
 
