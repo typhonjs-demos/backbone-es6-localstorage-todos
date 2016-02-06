@@ -3,19 +3,11 @@
 import Backbone from 'backbone';
 
 /**
- * Our basic todos Item model has `content`, `order`, and `done` attributes. When creating a new Item instance in
- * `App.js->createItem` the current Parse user is also associated with the item instance along with a
- * Parse.ACL (access control list) instance which ensures that the item is only accessible by that given user.
+ * Our basic todos Item model has `content`, `order`, and `done` attributes. New Item instances are created in
+ * `App.js->createItem`.
  */
 export default class Item extends Backbone.Model
 {
-   /**
-    * Returns the `className` which is the table stored in Parse.
-    *
-    * @returns {string}
-    */
-   get className() { return 'Item'; }
-
    /**
     * Default attributes for the item.
     *
