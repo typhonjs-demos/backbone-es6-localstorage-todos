@@ -15,9 +15,6 @@ const s_LOCAL_STORAGE = new Backbone.LocalStorage('backbone:es6:localstorage:Tod
  * and retrieve the next order number used to sort `Items`. Instead of exporting the class itself an instance of the
  * the class is exported. This allows the instance to be imported anywhere access to the collection is necessary.
  * Multiple views may access this instance, but in this demo only `ManageTodosView` displays data from the collection.
- *
- * Please note that the Parse.Query is generated in `App.js` during user login using the current user ID to retrieve
- * `Items` associated with the current user.
  */
 class TodoList extends Backbone.Collection
 {
