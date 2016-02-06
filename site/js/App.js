@@ -20,8 +20,7 @@ export default class App
 {
    /**
     * Wires up the main eventbus, invokes the private s_INITIALIZE_ROUTE function which creates `AppRouter` and sets up
-    * a catch all handler then invokes `Backbone.history.start` with the root path and finally the constructor shows the
-    * proper view based on whether there is a current logged in user.
+    * a catch all handler then invokes `Backbone.history.start` with the root path and finally the constructor creates the main view..
     */
    constructor()
    {
@@ -35,7 +34,7 @@ export default class App
       s_INITIALIZE_ROUTE();
 
       /**
-       * Creates the initial displayed view based given if a user is currently logged into the app.
+       * Creates the only displayed view of the app.
        *
        * @type {View} Stores the current active view.
        */
