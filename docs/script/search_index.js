@@ -1908,12 +1908,6 @@ window.esdocSearchIndex = [
     "file"
   ],
   [
-    "backbone-es6-localstorage-todos/site/js/models/item.js~item#classname",
-    "class/backbone-es6-localstorage-todos/site/js/models/Item.js~Item.html#instance-get-className",
-    "backbone-es6-localstorage-todos/site/js/models/Item.js~Item#className",
-    "member"
-  ],
-  [
     "backbone-es6-localstorage-todos/site/js/models/item.js~item#defaults",
     "class/backbone-es6-localstorage-todos/site/js/models/Item.js~Item.html#instance-get-defaults",
     "backbone-es6-localstorage-todos/site/js/models/Item.js~Item#defaults",
