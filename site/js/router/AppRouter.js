@@ -6,7 +6,7 @@ import appState   from 'pathSite/js/models/appState.js';
 
 /**
  * Provides a basic `Backbone.Router` to route between app states: `all`, `active` & `completed`. When a user
- * navigates between these different filter type states `Backbone.history.navigate` is invoked in `App.js->selectFilter`
+ * navigates between these different filter type states `Backbone.history.navigate` is invoked in `App->selectFilter`
  * to update the navigation history allowing the user to use the back and forward browser controls to navigate the app.
  * When a filter type is selected it is referenced in the current URL for the web app. 
  *
