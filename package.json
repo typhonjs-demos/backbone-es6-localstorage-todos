@@ -8,14 +8,16 @@
     "type": "git",
     "url": "https://github.com/typhonjs-demos/typhonjs-backbone-localstorage-todos/typhonjs-backbone-localstorage-todos.git"
   },
+  "bugs": {
+    "url": "https://github.com/typhonjs-demos/typhonjs-backbone-localstorage-todos/issues"
+  },
   "jspm": {
-    "main": false,
     "dependencies": {
-      "backbone": "github:typhonjs/backbone-es6@master",
-      "jquery": "github:typhonjs/zepto@master",
+      "backbone": "github:typhonjs-backbone/backbone-es6@master",
+      "jquery": "github:typhonjs-browser/zepto@master",
       "text": "github:systemjs/plugin-text@^0.0.2",
-      "typhonjs-core-backbone-events-logged": "github:typhonjs/typhonjs-core-backbone-events-logged@master",
-      "typhonjs-core-backbone-localstorage": "github:typhonjs/typhonjs-core-backbone-localstorage@master",
+      "typhonjs-core-backbone-events-logged": "github:typhonjs-backbone/typhonjs-core-backbone-events-logged@master",
+      "typhonjs-core-backbone-localstorage": "github:typhonjs-backbone/typhonjs-core-backbone-localstorage@master",
       "underscore": "npm:underscore@^1.8.3"
     },
     "devDependencies": {
@@ -25,10 +27,10 @@
     }
   },
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "jspm": "0.16.25",
-    "typhonjs-config-eslint": "^0.2.1",
-    "typhonjs-config-jspm-parse": "^0.4.0",
-    "typhonjs-core-gulptasks": "^0.5.0"
+    "gulp": "^3.0.0",
+    "jspm": "^0.16.0",
+    "typhonjs-config-eslint": "^0.4.0",
+    "typhonjs-core-gulptasks": "^0.6.0",
+    "typhonjs-npm-build-test": "^0.1.0"
   }
 }
