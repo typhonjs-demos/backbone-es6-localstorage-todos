@@ -1,5 +1,5 @@
 # backbone-es6-localstorage-todos
-Provides the canonical TODOs demo for [backbone-es6](https://github.com/typhonjs/backbone-es6) using [typhonjs-core-backbone-localstorage](https://github.com/typhonjs/typhonjs-core-backbone-localstorage) with [JSPM](http://jspm.io/) / [SystemJS](https://github.com/systemjs/systemjs).
+Provides the canonical TODOs demo for [backbone-es6](https://github.com/typhonjs-backbone/backbone-es6) using [typhonjs-core-backbone-localstorage](https://github.com/typhonjs-backbone/typhonjs-core-backbone-localstorage) with [JSPM](http://jspm.io/) / [SystemJS](https://github.com/systemjs/systemjs).
 
 More documentation and tutorial coming soon. The basic installation steps:
 
@@ -13,10 +13,10 @@ More documentation and tutorial coming soon. The basic installation steps:
 
 More info coming soon.
 
-Live demo here: http://js.demos.typhonrt.org/backbone-es6-localstorage-todos/
+Live demo here: https://demos.typhonjs.io/typhonjs-demos/backbone-es6-localstorage-todos
 
-Docs (class overview) here: http://js.demos.typhonrt.org/backbone-es6-localstorage-todos/docs/
+Docs (class overview) here: https://docs.typhonjs.io/typhonjs-demos/backbone-es6-localstorage-todos
 
 ------
 
-Please review [electron-backbone-es6-localstorage-todos](https://github.com/typhonjs-demos/electron-backbone-es6-localstorage-todos) for how to create a desktop version from the bundled version of this web app using [Electron](http://electron.atom.io/). Minimal code and configuration is necessary when using [typhonjs-core-gulptasks](https://github.com/typhonjs/typhonjs-core-gulptasks) to work with Electron.
+Please review [electron-backbone-es6-localstorage-todos](https://github.com/typhonjs-demos-deploy-electron/electron-backbone-es6-localstorage-todos) for how to create a desktop version from the bundled version of this web app using [Electron](http://electron.atom.io/). Minimal code and configuration is necessary when using [typhonjs-core-gulptasks](https://github.com/typhonjs-node-gulp/typhonjs-core-gulptasks) to work with Electron.
