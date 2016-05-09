@@ -1,15 +1,15 @@
 {
-  "name": "typhonjs-backbone-localstorage-todos",
+  "name": "backbone-es6-localstorage-todos",
   "version": "0.1.0",
-  "homepage": "https://github.com/typhonjs-demos/typhonjs-backbone-localstorage-todos",
-  "description": "The proverbial TODO app example w/ `typhonjs-backbone` + `backbone.localstorage` + JSPM / SystemJS, ESDoc, ESLint, and Gulp.",
+  "homepage": "https://github.com/typhonjs-demos/backbone-es6-localstorage-todos",
+  "description": "The proverbial TODO app example w/ `backbone-es6` + `typhonjs-core-backbone-localstorage` + JSPM / SystemJS, ESDoc, ESLint, and Gulp.",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/typhonjs-demos/typhonjs-backbone-localstorage-todos/typhonjs-backbone-localstorage-todos.git"
+    "url": "https://github.com/typhonjs-demos/backbone-es6-localstorage-todos.git"
   },
   "bugs": {
-    "url": "https://github.com/typhonjs-demos/typhonjs-backbone-localstorage-todos/issues"
+    "url": "https://github.com/typhonjs-demos/backbone-es6-localstorage-todos/issues"
   },
   "jspm": {
     "dependencies": {
@@ -18,12 +18,12 @@
       "text": "github:systemjs/plugin-text@^0.0.2",
       "typhonjs-core-backbone-events-logged": "github:typhonjs-backbone/typhonjs-core-backbone-events-logged@master",
       "typhonjs-core-backbone-localstorage": "github:typhonjs-backbone/typhonjs-core-backbone-localstorage@master",
-      "underscore": "npm:underscore@^1.8.3"
+      "underscore": "npm:underscore@^1.8.0"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.8.35",
-      "babel-runtime": "npm:babel-runtime@^5.8.35",
-      "core-js": "npm:core-js@^1.2.6"
+      "babel": "npm:babel-core@^5.8.0",
+      "babel-runtime": "npm:babel-runtime@^5.8.0",
+      "core-js": "npm:core-js@^1.2.0"
     }
   },
   "devDependencies": {
