@@ -18,12 +18,12 @@
       "text": "github:systemjs/plugin-text@^0.0.2",
       "typhonjs-core-backbone-events-logged": "github:typhonjs-backbone/typhonjs-core-backbone-events-logged@master",
       "typhonjs-core-backbone-localstorage": "github:typhonjs-backbone/typhonjs-core-backbone-localstorage@master",
-      "underscore": "npm:underscore@^1.8.0"
+      "underscore": "npm:underscore@^1.0.0"
     },
     "devDependencies": {
-      "babel": "npm:babel-core@^5.8.0",
-      "babel-runtime": "npm:babel-runtime@^5.8.0",
-      "core-js": "npm:core-js@^1.2.0"
+      "babel": "npm:babel-core@^5.0.0",
+      "babel-runtime": "npm:babel-runtime@^5.0.0",
+      "core-js": "npm:core-js@^1.0.0"
     }
   },
   "devDependencies": {
